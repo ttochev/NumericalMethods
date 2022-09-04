@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.11.14
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -7,14 +7,14 @@ using InteractiveUtils
 # ╔═╡ c63c2fbc-f1dd-11ea-3081-cd1f11630f23
 using Pkg
 
+# ╔═╡ ca0e570a-f1dd-11ea-1655-29faf543c20a
+Pkg.activate(mktempdir())
+
 # ╔═╡ bdbb7f1e-f1dd-11ea-1219-91d906455e4a
 begin
 	Pkg.add("Suppressor")
 	using Suppressor
 end
-
-# ╔═╡ ca0e570a-f1dd-11ea-1655-29faf543c20a
-Pkg.activate(mktempdir())
 
 # ╔═╡ 41e94dd4-f1d9-11ea-2d2f-4b521ddb2284
 md"""

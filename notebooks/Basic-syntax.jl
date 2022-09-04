@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.12
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -209,6 +209,21 @@ md"A nice alternative syntax to create matrices following a certain pattern is a
 # ╔═╡ 41931698-557e-11eb-1449-4790fb1f0327
 
 
+# ╔═╡ 00000000-0000-0000-0000-000000000001
+PLUTO_PROJECT_TOML_CONTENTS = """
+[deps]
+"""
+
+# ╔═╡ 00000000-0000-0000-0000-000000000002
+PLUTO_MANIFEST_TOML_CONTENTS = """
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.7.3"
+manifest_format = "2.0"
+
+[deps]
+"""
+
 # ╔═╡ Cell order:
 # ╟─0d3aec92-edeb-11ea-3adb-cd0dc17cbdab
 # ╟─3b038ee0-edeb-11ea-0977-97cc30d1c6ff
@@ -265,3 +280,5 @@ md"A nice alternative syntax to create matrices following a certain pattern is a
 # ╟─54e47e9e-edef-11ea-2d75-b5f550902528
 # ╠═6348edce-edef-11ea-1ab4-019514eb414f
 # ╠═41931698-557e-11eb-1449-4790fb1f0327
+# ╟─00000000-0000-0000-0000-000000000001
+# ╟─00000000-0000-0000-0000-000000000002

@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -7,8 +7,9 @@ using InteractiveUtils
 # This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
 macro bind(def, element)
     quote
+        local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
         local el = $(esc(element))
-        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : missing
+        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
         el
     end
 end
@@ -64,7 +65,7 @@ For example, we can choose a random friend to call:
 friends = ["Alicia", "Jaime", "Elena", "Roberto"]
 
 # ╔═╡ cf2a7ec2-fdbc-11ea-1010-190de6ff85d1
-rand(friends)
+rand(friends, (2, 3, 4))
 
 # ╔═╡ 1ef8cf70-fe13-11ea-257b-cbc9abd8ab3b
 rand( (1, 2) )
